@@ -1,11 +1,39 @@
-﻿using System;
+using System;
 
 namespace Sample
 {
     public class SampleService
     {
+        //TODO: Criar um método que subtrai passando um total ou não e a partir do
+        //segundo parâmetro podendo colocar varios números para realizar a subtração entre
+        //eles ou a partir do total
+        public decimal Subtract(decimal total = 0, params decimal[] values)
+        {
+            throw new NotImplementedException();
+        }
 
-        public bool IsPrime(int candidate) 
+        //TODO: Criar um método que soma passando um total ou não e a partir do
+        //segundo parâmetro podendo colocar varios números para realizar a subtração entre
+        //eles ou a partir do total
+        public decimal Sum(decimal total = 0, params decimal[] values)
+        {
+            throw new NotImplementedException();
+        }
+
+        //TODO: Criar um método que verifica se o número é par
+        public bool IsEven(int candidate)
+        {
+            throw new NotImplementedException();
+        }
+
+        //TODO: Criar um método que verifica se o número é impar
+        public bool IsOdd(int candidate)
+        {
+            throw new NotImplementedException();
+        }
+
+        #region Verifica se o número é primo ou não
+        public bool IsPrime(int candidate)
         {
 
             if (candidate < 2)
@@ -22,6 +50,7 @@ namespace Sample
             }
 
             return true;
-        }
+        } 
+        #endregion
     }
 }
