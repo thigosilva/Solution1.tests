@@ -23,13 +23,21 @@ namespace Sample
         //TODO: Criar um método que verifica se o número é par
         public bool IsEven(int candidate)
         {
-            throw new NotImplementedException();
+            if (candidate % 2 == 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         //TODO: Criar um método que verifica se o número é impar
         public bool IsOdd(int candidate)
         {
-            throw new NotImplementedException();
+            if (candidate % 2 != 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         #region Verifica se o número é primo ou não
