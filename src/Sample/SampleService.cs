@@ -17,7 +17,14 @@ namespace Sample
         //eles ou a partir do total
         public decimal Sum(decimal total = 0, params decimal[] values)
         {
-            throw new NotImplementedException();
+            var result = total;
+
+            foreach (var item in values)
+            {
+                result += item;
+            }
+
+            return result;
         }
 
         public bool IsEven(int candidate)

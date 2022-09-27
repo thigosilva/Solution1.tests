@@ -13,7 +13,8 @@ namespace Sample.Test
         }
 
         [Fact]
-        public void Sum_MultipleValues_ReturnSuccess() {
+        public void Sum_MultipleValues_ReturnSuccess()
+        {
             //arrange
             var value1 = 2;
             var value2 = 4;
