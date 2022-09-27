@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace Sample.Extensions
+{
+    public static class StringExtensions
+    {
+        public static bool IsValidMail(this string email)
+        {
+            return true;
+        }
+    }
+}
