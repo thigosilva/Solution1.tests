@@ -20,7 +20,6 @@ namespace Sample
             throw new NotImplementedException();
         }
 
-        //TODO: Criar um método que verifica se o número é par
         public bool IsEven(int candidate)
         {
             if (candidate % 2 == 0)
@@ -30,7 +29,6 @@ namespace Sample
             return false;
         }
 
-        //TODO: Criar um método que verifica se o número é impar
         public bool IsOdd(int candidate)
         {
             if (candidate % 2 != 0)

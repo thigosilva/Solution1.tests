@@ -13,6 +13,34 @@ namespace Sample.Test
         }
 
         [Theory]
+        [InlineData(-4)]
+        [InlineData(-2)]
+        [InlineData(0)]
+        [InlineData(2)]
+        public void IsEven_ValuesLessThan3_ReturnTrue(int value)
+        {
+            //act (chamada do método a ser testado, logo a unidade)
+            var result = _sampleService.IsEven(value);
+
+            //assert (o cenário proposto no resultado do teste)
+            Assert.True(result);
+        }
+
+        [Theory]
+        [InlineData(-5)]
+        [InlineData(-3)]
+        [InlineData(-1)]
+        [InlineData(1)]
+        public void IsEven_ValuesLessThan3_ReturnFalse(int value)
+        {
+            //act (chamada do método a ser testado, logo a unidade)
+            var result = _sampleService.IsEven(value);
+
+            //assert (o cenário proposto no resultado do teste)
+            Assert.False(result);
+        }
+
+        [Theory]
         [InlineData(-5)]
         [InlineData(-3)]
         [InlineData(-1)]
