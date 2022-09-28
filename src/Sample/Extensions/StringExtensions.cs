@@ -9,7 +9,8 @@ namespace Sample.Extensions
     {
         public static bool IsValidMail(this string email)
         {
-            return true;
+            Regex validateEmailRegex = new Regex("^\\S+@\\S+\\.\\S+$");
+            return validateEmailRegex.IsMatch(email);
         }
     }
 }
