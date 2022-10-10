@@ -6,11 +6,14 @@ namespace Sample.Test
     {
         private readonly SampleService _sampleService;
 
+
+        //teste de copia.
         public SampleServiceTest()
         {
             //arrange (qualque tipo de variável necessária para montar o teste)
             _sampleService = new SampleService();
         }
+
 
         [Fact]
         public void Sum_MultipleValues_ReturnSuccess()
@@ -32,6 +35,7 @@ namespace Sample.Test
             //Assert
             Assert.Equal(withTotal, resultWithTotal);
             Assert.Equal(withoutTotal, resultWithoutTotal);
+
         }
 
         [Theory]
